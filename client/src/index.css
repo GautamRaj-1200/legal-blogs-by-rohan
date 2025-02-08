@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    max-width: 1312px;
+    margin: 0 auto;
+}
+@media screen and (max-width:640px) {
+    body{
+        width: 90%;
+    }
+}
+
+@layer base {
+    @font-face {
+        font-family: 'Roboto';
+        src: url('./assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    }
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('./assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+    }
+}
+
+label{
+    font-size: 1.125rem;
+    line-height: 100%;
+    font-weight: 700;
+    display: block;
+}
+input{
+    outline: none;
+    width: 100%;
+    color:#262522;
+    border-bottom-width: 2px;
+    border-color: #262522;
+    padding-bottom: 0.5rem;
+    margin-top:1rem;
+    font-size: 1.125rem;
+    line-height: 100%;
+    font-weight: 500;
+}
+input::placeholder{
+    color:#4b4949
+}
