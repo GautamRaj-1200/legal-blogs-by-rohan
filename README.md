@@ -1,2 +1,2 @@
 # Legal Blogs By Rohan
-- A bloggin website
+- A blogging website
